@@ -1,0 +1,78 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="4dp"
+    tools:context=".HistoryActivity"
+
+    card_view:cardUseCompatPadding="true"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_margin="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/appImage"
+            android:layout_width="88dp"
+            android:layout_height="94dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/logo"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/headingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/appImage"
+            android:paddingLeft="16sp"
+            android:paddingRight="16dp"
+            android:text="4 March 2019"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:id="@+id/subHeaderText"
+            style="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingText"
+            android:layout_toRightOf="@+id/appImage"
+            android:paddingLeft="16dp"
+            android:text="Monday"
+            android:paddingRight="16dp"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/subHeadingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subHeaderText"
+            android:layout_toRightOf="@+id/appImage"
+            android:gravity="left"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Requested On: 2019-03-02'T'13:20:10*633+0530"
+            android:textColor="#737078"
+            android:textSize="14sp"/>
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
